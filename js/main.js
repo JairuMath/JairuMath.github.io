@@ -62,4 +62,22 @@ jQuery(document).ready(function($) {
           $(".overlay-menu").toggleClass("open");
         });
 
+        //===============================
+$('.click').click(function(){
+  
+  $('.click').fadeOut(500);
+  $('.container-flotante').fadeIn(500);
+  $('.background-flotante').css({"-webkit-filter":"blur(6px)"});
+  
+ 
+  
 });
+
+$('#exit').click(function(){
+  $('.container-flotante').fadeOut(500);
+  $('.click').fadeIn(500);
+  $('.background-flotante').css({"-webkit-filter":"blur(0)"});
+});
+
+});
+

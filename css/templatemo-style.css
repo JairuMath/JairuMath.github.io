@@ -1412,3 +1412,111 @@ label {
 /*------------------------------------------------------------------
     [Progress Bar]
 ------------------------------------------------------------------*/
+
+/*=========================================================================*/
+/*======================= Cajas Flotantes Jaime ===========================*/
+/*=========================================================================*/
+.black_overlay{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.623);
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80; 
+  filter: alpha(opacity=88);
+} 
+.white_content { 
+  display: inline-block;  /*none, flex , inline-block*/
+  position: absolute; 
+  top: 5%; 
+  left: 50%; 
+  width: 120%; 
+  height: 120%; 
+  padding: 5px; 
+  border: 10px whitesmoke; 
+  background-color: rgba(31, 27, 27, 0.966); 
+  z-index:1002; 
+  overflow: auto; 
+} 
+/*======================================================================
+======================= Ventana Modal ==================================
+========================================================================*/
+
+
+/*============================== */
+*{margin: 0; padding 0;}
+
+.background-flotante{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  /*background-image: url('https://static.tumblr.com/0a05985b1fb0a43530e57d6c0bc7206b/imuarky/MTamxbgb5/tumblr_static_tumblr_lsi8p153ix1qer7uso1_1280.jpg');*/ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.click{
+  background-color: black;
+  width: 150px;
+  height: 20px;
+  border-radius: 10%;
+  opacity: .8;
+  position: absolute;
+  /*top: 50%;*/
+  left: 5%;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.click h1{
+  color: #fff;
+  text-align: center;
+  font-size: 75px;
+  line-height: 110px;
+}
+
+.click:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition: all .5s linear;
+}
+
+.container-flotante{
+  background: black;
+  font-family: "Open-sans", sans-serif;
+  color: white;
+  opacity: .8;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+
+.container-flotante p {
+  margin: 15px;
+}
+
+#title{
+  font-size: 1.5em;
+}
+
+#exit{
+  float: right;
+  cursor: pointer;
+}
+
